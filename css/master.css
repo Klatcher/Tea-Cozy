@@ -8,6 +8,7 @@ body {
 }
 header {
   width: 100%;
+  top: 0;
   position: fixed;
   border-bottom: 1px solid seashell;
   height: 68px;
@@ -22,7 +23,7 @@ header {
   height: 50px;
 }
 nav {
-  margin-right: 5px;
+  margin-right: 10px;
   text-align: right;
 }
 nav a {
@@ -31,6 +32,7 @@ nav a {
   text-decoration: underline;
 }
 #mission {
+  padding-top: 68px;
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -48,13 +50,51 @@ h2, h2, h4 {
   background-color: black;
 }
 #tea {
-  display: inline-flex;
-  flex-flow: column wrap;
+  padding-top: 68px;
   width: 1000px;
   height: 700px;
-  margin: 50px auto;
+  margin: auto;
+}
+.teaflex {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.teaimg {
+  margin: 10px 15px;
 }
 .teaimg img {
   height: 200px;
   width: 300px;
+}
+#locas {
+  padding-top: 68px;
+  margin: auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+}
+.locaflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loca {
+  background-color: black;
+  width: 300px;
+  margin: 15px 20px;
+  opacity: 1;
+}
+.loca p {
+  margin: 35px 0;
+}
+#contact {
+  height: 200px;
+}
+footer {
+  margin: 20px 20px;
+  text-align: left;
 }
